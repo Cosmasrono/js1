@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>login here</h1>
+<style>
+    h1{
+        text-align: center;
+    }
+    body{
+        text-align: center;
+        background-color:forestgreen;
+    }
+</style>
+<input type="button"onclick="hello();" value="click me">
+<body> 
+    <script src="./login.js"></script>
+    <div class="container"style="margin-top:10px;margin-left:90px;display:flex;flex-direction:row;flex-wrap:wrap;">
+        <form name="form1" onsubmit="return validateForm();"action="" method="post"style="padding-top:10px;padding-bottom:10px;margin-bottom:10px;width :300px;border-radius:10px; margin-left:20px;margin-right: 20px;padding-left:10px;padding-right:10px ;display:flex;background-color:grey; direction-flex;flex-direction:column;justify-items:conter;justify-content:center;">  
+        <!--  <input type="text"id=" names"placeholder="names"style="padding:20px;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;margin:1px;borer:none;border-radius:5px"required> -->
+        <!--  <input type="text"id="Username" max="8" placeholder="Enter Username" style="padding:20px;padding-left:15px; padding-right:15px; padding-top: 10px; padding-bottom: 10px; margin: 1px;  border: none  ; border-radius: 5px;"required> -->
+         <input type="email"id="email" required placeholder="Enter Email" style="padding:20px;padding-left:15px; padding-right:15px; padding-top: 10px; padding-bottom: 10px; margin: 1px;  border: none ; border-radius: 5px;"required>
+<!--          <div id="#email_error"style="margin-top:5px;width: 345px;font-size:18px;">please input your email</div> -->
+         Password: <input type="password" name="password" style="margin:2px;padding:20px;  border-radius: 10px; border:3px solid forestgreen;">
+         Re-enter Password:<input type="password" name="password2" style="margin:2px;padding:20px;  border-radius: 10px; border:3px solid forestgreen;">>
+         <div id="#password_error"style="margin-top:5px;width: 345px;font-size:18px;margin:2px;padding:20px;border-radius:10px; border:3px solid forestgreen;">please input correct password</div>
+         <!-- <input type="button" onclick="loggIn()" value="login" style="padding:20px;margin-left: 30%;color:white; padding-right:5px;padding-left:15px;padding-top:5px;background-color: blue; padding-bottom: 5px; border: none; width: 100px; display: flex; justify-content: center; justify-items: center; border-radius:3px;margin-top:10px;">  -->
+          <input type="submit" value="Submit">
+        
+    </form>
+   
+    </div>
+    
+</body> 
+
+</html>
